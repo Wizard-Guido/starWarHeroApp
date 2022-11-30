@@ -10,13 +10,16 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: npm dependencies
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@main
+        with:
+          node-version: '16.13.2'
+      # Install the dependencies need to build the app
+      - name: Install Dependencies
         run: npm install
-      - uses: actions/checkout@v2
-      - name: ng cli install
-        run: npm i -g @angular/cli
-      - uses: actions/checkout@v3
+      - name: Build
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
