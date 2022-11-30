@@ -1,0 +1,30 @@
+<div class="detail_box" *ngIf="hero">
+
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>hero id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      {{hero.name}}
+    </div>
+    <div>
+        <label for="hero-height">Hero height: </label>
+        {{hero.height}}
+    </div>
+    <div>
+        <label for="hero-gender">Hero gender: </label>
+        {{hero.gender}}
+    </div>
+    <div>
+        <label for="hero-birth">Hero birth: </label>
+        {{hero.birth_year}}
+    </div>
+    <div>
+        <label for="hero-eye">Hero eye color: </label>
+        {{hero.eye_color}}
+    </div>
+    <div>
+        <label for="hero-skin">Hero skin color: </label>
+        {{hero.skin_color}}
+    </div>
+  
+</div>

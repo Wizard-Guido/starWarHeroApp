@@ -1,0 +1,10 @@
+<div class="box_host">
+<div class="box" *ngFor="let hero of heroes" data-testid="heroBox">
+    <a routerLink="/detail/{{hero.id}}"><img title="" src="https://placekitten.com/400/200"></a>
+    <div class="small_box">
+        <a routerLink="/detail/{{hero.id}}"><p>{{hero.name}}</p></a>
+        <a routerLink="/detail/{{hero.id}}"><p>{{hero.eye_color}}</p></a>
+        <a routerLink="/detail/{{hero.id}}"><p>{{hero.skin_color}}</p></a>
+    </div>
+</div>
+</div>

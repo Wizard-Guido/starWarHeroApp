@@ -1,0 +1,38 @@
+:host {
+    width: 80%;
+    height: 100%;
+}
+
+.box_host {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 1rem;
+    padding-top: 10rem;
+
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.box {
+    display: block;
+    height: fit-content;
+    max-height: 20rem;
+}
+
+p {
+    line-height: 0.3rem;
+}
+
+p:nth-child(1) {
+    font-size: 1rem;
+}
+
+p:nth-child(3) {
+    color: gray;
+}

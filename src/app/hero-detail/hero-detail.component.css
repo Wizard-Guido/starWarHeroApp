@@ -1,0 +1,30 @@
+.detail_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.detail_box > div {
+    font-size: 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(245 245 244);
+    width: 30rem;
+    height: 4.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    transition: width 1s, height 1s, font-size 1s, font-weight 1s, background-color 1s;
+}
+
+.detail_box > div:hover {
+    width: 50rem;
+    height: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(231 229 228);
+}
+
