@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
       - name: Setup node
-        uses: actions/setup-node@main
+        uses: actions/setup-node@master
         with:
           node-version: '16.13.2'
       # Install the dependencies need to build the app
